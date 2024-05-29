@@ -1,0 +1,202 @@
+// Fix billing field wrapper
+.woocommerce-input-wrapper {
+	width: 100%;
+}
+
+.woocommerce-message {
+    border-top-color:$primary;
+  }
+  
+  .woocommerce-error, .woocommerce-info, .woocommerce-message {
+    background-color: $tertiary;
+  }
+  
+  .woocommerce-message::before {
+    color: $primary;
+  }
+
+  a.button.wc-forward {
+
+    background-color:$secondary;
+    color:$tertiary;
+}
+
+.woocommerce .summary {
+    margin-top: -35px;
+  }
+
+// Woocommerce product gallery slider width fix
+figure.woocommerce-product-gallery__wrapper {
+    max-width: inherit !important;
+    background: $tertiary;
+    text-align: center;
+    min-height: 368px;
+    //border-radius: 8px;
+    position: relative;
+  }
+
+  .woocommerce-product-gallery__wrapper a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: block;
+  }
+  
+
+// Fix coupon code input width
+@media(min-width: 768px) {
+	#coupon_code.input-text {
+		width: 110px !important;
+	}
+}
+
+.summary .price {display:none;}
+
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images { 
+	float: left;
+	width: 45%; }
+
+
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    float: right;
+    width: 50%;
+    clear: none;
+}
+
+.woocommerce div.product div.images img {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    align-self: center;
+    box-shadow: none;
+  }
+
+.design_thumb { display:inline-flex; padding-right:10px; }
+
+.design_thumb input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+	cursor:pointer;
+}
+
+.design_thumb label {
+    display: inline-block;
+    background-color:transparent;
+    padding: 0px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: none;
+    //border-radius: 0px;
+	cursor:pointer;
+}
+
+.design_thumb input[type="radio"]:checked + label {
+   	border:4px solid;
+	border-radius:8px;
+    border-color: $secondary;
+}
+
+.gf_value { display:inline-flex; padding-right:10px; width: 20%; }
+
+.gf_value input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+	cursor:pointer;
+}
+
+.product_meta {
+    display: none;
+  }
+
+div.qty {
+    float: left;
+    padding: 10px 10px 0px 0px;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .value.design {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+  .gf_value label {
+    display: block;
+    background-color: $tertiary;
+    padding: 10px 0;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    color: #b3b1b1;
+    border: none;
+    //border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.baltic-gf-delivery label[for=delivery_date], .baltic-gf-shipping label[for=shipping] {
+    display: block;
+    font-family: sans-serif, Arial;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+  }
+
+  .baltic-gf-delivery input[type=date], input[type=number] {
+    background-color:$tertiary;
+    color: $primary;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    border: none;
+    //border-radius: 8px;
+  }
+
+.gf_value input[type="radio"]:checked + label {
+	 	background-color: $secondary;
+		color:#fff;
+}
+
+.baltic-gf-message textarea {
+    width: 98%;
+    border: none;
+    background: $tertiary;
+    //border-radius: 8px;
+    min-height: 120px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  .baltic_left_half, .baltic_right_half {
+    width: 50%;
+    float: left;
+  }
+  
+  .baltic_right_half {
+    width: 50%;
+    text-align: right;
+    float: right;
+  }
+  
+  .baltic-gf-shipping input, .baltic-gf-shipping select {
+    width: 100%;
+    border: none;
+    background: $tertiary;
+    //border-radius: 8px;
+    min-height: 40px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  
+  .baltic_left_half input, .baltic_right_half input {
+    width: 98%;
+  }
+  
+  button.single_add_to_cart_button.btn.btn-primary {
+    float: right;
+    //border-radius: 8px;
+  }

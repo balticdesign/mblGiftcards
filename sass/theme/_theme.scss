@@ -1,0 +1,176 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+.primary_background { background-color:$primary; }
+.secondary_background {  background-color:$secondary;  }
+.tertiary_background {  background-color:$tertiary;  }
+.select { background-color:$secondary; font-weight:bold; color:#fff;  }
+
+.orientation .container {padding:0px;}
+.orientation .step { justify-content:center; border:$primary 1px solid; padding:10px 0px;  }
+
+.slick-slider {
+    width: 80%;
+  }
+  
+  .slick-dots {
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    position: absolute;
+    bottom: 40px;
+    display: none;
+  }
+  
+  .slick-dots li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .slick-dots li button {
+    font-size: 0;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    height: 15px;
+    padding: 0px;
+    width: 15px;
+    margin: 0 4px;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #00505b;
+  }
+  
+  .slick-prev, .slick-prev:active, .slick-prev:focus {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    background: transparent;
+  }
+  
+  .slick-next, .slick-next:active, .slick-next:focus {
+    font-size: 0;
+    line-height: 1;
+    position: absolute;
+ 
+    display: block;
+    width: 120px;
+    height: 42px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    background: transparent;
+  }
+  .virtual_gc .slick-next, .virtual_gc .slick-next:active, .virtual_gc .slick-next:focus {
+  bottom: -20px;
+  }
+
+  .mail_gc .slick-next, .mail_gc .slick-next:active, .mail_gc .slick-next:focus {
+    bottom: 110px;
+    }
+  
+  .slick-prev:before, .slick-next:before {
+    line-height: 1;
+    opacity: 0.75;
+    color: #ccc;
+  }
+  
+  .slick-next:before {
+    font-size: 20px;
+    content: "Continue";
+    background: #00505b;
+    color: #fff;
+    padding: 5px 20px 10px;
+    //border-radius: 8px;
+    pointer-events: none;
+  }
+  
+  .slick-prev:before {
+    font-size: 30px;
+    font-family: "slick";
+    content: "←";
+    color: #00505b;
+  }
+  
+  .slick button.slick-next {
+    right: 5px;
+  }
+  
+  .slick button.slick-prev {
+    left: -40px;
+  }
+  
+  .slick button.slick-disabled {
+    opacity: 0;
+    pointer-events: none;
+    height: 0px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .slick-slider {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .baltic-gf-message textarea {
+      width: 100%;
+    }
+  
+    .slick-prev, .slick-prev:active, .slick-prev:focus {
+      font-size: 0;
+      line-height: 1;
+      position: absolute;
+      bottom: 20px;
+      display: block;
+      width: 120px;
+      height: 42px;
+      padding: 0;
+      cursor: pointer;
+      color: transparent;
+      border: none;
+      background: transparent;
+    }
+  
+    .slick button.slick-next {
+      right: 0px;
+    }
+  }
+
+.navbar-nav a.nav-link { padding:5px 10px; 
+}
+.navbar-nav li {
+    margin: 0px 0px 0px 10px;
+}
+.navbar-nav .current-menu-item a.nav-link { background-color:$secondary; padding:5px 10px; //border-radius:8px; 
+  font-weight:700; 
+}
+
+.navbar-light .navbar-nav .active > .nav-link  { color:#fff; }
+
+@media only screen and (max-width: 600px) {
+    .slick-slider {
+      width: 100%;
+    }
+  
+    .woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+      float: none;
+      width: 100%;
+    }
+  
+    .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+      float: none;
+      width: 100%;
+    }
+  }
